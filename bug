@@ -1,0 +1,5 @@
+git add [file] //跟踪添文件
+git commit -m "first commit"     //"first commit" git 上的目录文件名
+git remote add origin https://github.com/shijie520/work.git  //获取仓库地址
+git push -u origin master //开始创建
+
