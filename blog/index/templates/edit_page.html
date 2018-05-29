@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Edit page</title>
+</head>
+<body>
+<form action="{% url 'page_post' %}" method="post">
+	{% csrf_token %}
+	<label>New of the Title
+		<br/>
+		<input type="text" name="title"/>
+	</label>
+<br/>
+<label>New of content
+	<br/>
+	<input type="text" name="content"/>
+</label>
+<br/>
+<input type="submit" name="">
+
+</form>
+</body>
+</html>
