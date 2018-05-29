@@ -7,7 +7,7 @@
 <form action="{% url 'page_post' %}" method="post">
 	{% csrf_token %}
 	{% if acts %}
-		<input type="hidden" name="id" value=" {{ acts.id }}">
+		<input type="hidden" name="id" value=" {{ acts.id | default:'0' }}">
 		<label>New of the Title
 		<input type="text" name="title" value = "{{ acts.title }}"/>
 		</label>
@@ -26,7 +26,7 @@
 		<input type="text" name="content"/>
 		</label>
 	{% endif %}
-		<br/>
+	  	<br/>
 		<input type="submit" name="">
 
 <br/>
