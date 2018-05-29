@@ -6,18 +6,35 @@
 <body>
 <form action="{% url 'page_post' %}" method="post">
 	{% csrf_token %}
-	<label>New of the Title
+	{% if acts %}
+		<input type="hidden" name="id" value=" {{ acts.id }}">
+		<label>New of the Title
+		<input type="text" name="title" value = "{{ acts.title }}"/>
+		</label>
 		<br/>
-		<input type="text" name="title"/>
-	</label>
-<br/>
-<label>New of content
-	<br/>
-	<input type="text" name="content"/>
-</label>
-<br/>
-<input type="submit" name="">
+		<label>New of the Title
+		<input type="text" name="content" value = "{{ acts.content }}"/>
+		</label>
 
+	{% else %}
+		<input type="hidden" name="id" value="0">
+		<label>New of the Title
+		<input type="text" name="title"/>
+		</label>
+		<br/>
+		<label>New of the Title
+		<input type="text" name="content"/>
+		</label>
+	{% endif %}
+		<br/>
+		<input type="submit" name="">
+
+<br/>
+<br/>
+<br/>
+<div>
+	<a href="{% url 'retuen_home' %}"> return home </a>
+</div>
 </form>
 </body>
 </html>

@@ -4,8 +4,12 @@
 	<title>Home Page</title>
 </head>
 <body>
+<div>
+	<a href="{% url 'retuen_home' %}"> return home </a>
+</div>
+
 <h1>
-	<a href="{% url 'edit_page' %}">New a book </a>
+	<a href="{% url 'edit_page' 0 %}">New a book </a>
 </h1>
 
 {% for act in acts %}

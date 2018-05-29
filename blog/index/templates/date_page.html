@@ -4,11 +4,14 @@
 	<title>修改文章</title>
 </head>
 <body>
+	<div>
+	<a href="{% url 'retuen_home' %}"> return home </a>
+</div>
 <h1>{{ act.title }} </h1> <!get the act title>
 <br/>
 <h3>{{ act.content }}</h3><!get the act content>
 <br/><br/>
 
-<a href="{% url 'edit_page'  %}"> Amend of the  </a>  <!return>
+<a href="{% url 'edit_page' act.id %}"> Amend of the  </a>  <!return>
 </body>
 </html>
