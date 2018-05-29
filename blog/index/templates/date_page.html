@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>date--page</title>
+	<title>修改文章</title>
 </head>
 <body>
-<h1>{{ act.title }} </h1>
+<h1>{{ act.title }} </h1> <!get the act title>
 <br/>
-<h3>{{ act.content }}</h3>
+<h3>{{ act.content }}</h3><!get the act content>
 <br/><br/>
 
-<a href=""> Amend of the  </a>
+<a href="{% url 'edit_page'  %}"> Amend of the  </a>  <!return>
 </body>
 </html>

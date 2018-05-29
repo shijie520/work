@@ -1,3 +1,21 @@
+git reset --hard  添加回退地址
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 AutoField         一个Integer类型的自动增长
 
  BooleanField      用于存放布尔类型的数据（True或者False）
