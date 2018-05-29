@@ -1,0 +1,38 @@
+AutoField         一个Integer类型的自动增长
+
+ BooleanField      用于存放布尔类型的数据（True或者False）
+
+ CharField         用于存放字符类型的数据，需要指定长度max_length
+
+ DateField         日期类型，必须是"YYYY-MM-DD"格式
+
+ DateTimeField     日期类型必须是"YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]"格式
+
+ DecimalField      小数型，用于存放小数的数字
+ EmailField        电子邮件类型
+ FilePathField     文件路径类型
+ FloatField        用于存放浮点型数据
+
+ IntegerField      integer类型，数值范围从-2127283648到2147483647
+
+ BigIntegerField   用于存放大的integer类型，最大数支持9223372036854775807
+
+ GenericIPAddressField  存放IP地址的类型，但允许NULL作为选项之一
+
+ NullBooleanField       像BooleanField类型，但允许NULL作为选项之一
+
+ PositiveIntegerField   像IntegerField类型，但是必须是正数或零，范围从0到2147483647
+
+ PositiveSmallIntegerField    像PositiveIntegerField类型，范围从0到32767
+
+ SlugField              Slug是短标签，只包含字母，数字，下划线或字符。它通常在网址中使用。像CharField类型一样，需要定义max_length值。
+
+ SmallIntegerField      像IntegerField类型，范围从-32768到32767
+
+ TextField         用于存放文本
+
+ TimeField         时间类型。"HH:MM[:ss[.uuuuuu]]"格式
+
+ URLField          用于存放URL地址
+
+ BinaryField       存储原始二进制数据字段
